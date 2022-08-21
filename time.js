@@ -15,6 +15,9 @@ start.addEventListener('click', function () {
     if (sec < 59) {
       sec += 1
       secs.innerHTML = sec < 10 ? '0' + sec : sec
+    } else {
+      sec = 0
+      secs.innerHTML = sec < 10 ? '0' + sec : sec
       if (min < 59) {
         min += 1
         mins.innerHTML = min < 10 ? '0' + min + ':' : min + ':'
